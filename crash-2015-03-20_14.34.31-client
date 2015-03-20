@@ -1,0 +1,102 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 3/20/15 2:34 PM
+Description: Unexpected error
+
+java.lang.NoSuchMethodError: net.minecraft.client.shader.ShaderGroup.<init>(Lnet/minecraft/client/resources/IResourceManager;Lnet/minecraft/client/shader/Framebuffer;Lnet/minecraft/util/ResourceLocation;)V
+	at guru.haun.hackery.client.HaClientUtils.setShader(HaClientUtils.java:16)
+	at guru.haun.hackery.potion.HackPotionHandler.shuffleShader(HackPotionHandler.java:28)
+	at guru.haun.hackery.potion.HackPotionHandler.onClientTick(HackPotionHandler.java:46)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_6_HackPotionHandler_onClientTick_ClientTickEvent.invoke(.dynamic)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54)
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:138)
+	at cpw.mods.fml.common.FMLCommonHandler.onPostClientTick(FMLCommonHandler.java:330)
+	at net.minecraft.client.Minecraft.func_71407_l(Minecraft.java:2052)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:961)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:887)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at guru.haun.hackery.client.HaClientUtils.setShader(HaClientUtils.java:16)
+	at guru.haun.hackery.potion.HackPotionHandler.shuffleShader(HackPotionHandler.java:28)
+	at guru.haun.hackery.potion.HackPotionHandler.onClientTick(HackPotionHandler.java:46)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_6_HackPotionHandler_onClientTick_ClientTickEvent.invoke(.dynamic)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54)
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:138)
+	at cpw.mods.fml.common.FMLCommonHandler.onPostClientTick(FMLCommonHandler.java:330)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['jtrent238'/2129, l='MpServer', x=-36.50, y=91.62, z=215.50]]
+	Chunk stats: MultiplayerChunkCache: 25, 25
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-41,89,207), Chunk: (at 7,5,15 in -3,12; contains blocks -48,0,192 to -33,255,207), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 350917 game time, 264245 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 25 total; [EntityCreeper['Dan'/1665, l='MpServer', x=-39.47, y=76.00, z=187.00], EntityCreeper['Jen'/1666, l='MpServer', x=-37.84, y=76.00, z=187.00], EntityItem['item.item.doorIron'/1667, l='MpServer', x=-39.06, y=76.13, z=186.91], EntityItem['item.item.doorIron'/1668, l='MpServer', x=-38.97, y=76.13, z=186.94], EntityItem['item.tile.pressurePlate'/1669, l='MpServer', x=-38.88, y=76.13, z=187.13], EntityItem['item.tile.pressurePlate'/1670, l='MpServer', x=-39.13, y=76.13, z=190.22], EntityItem['item.item.bucket'/1671, l='MpServer', x=-42.94, y=76.13, z=186.94], EntityItem['item.tile.workbench'/1672, l='MpServer', x=-40.69, y=76.13, z=190.84], EntityItem['item.item.swordDiamond'/1673, l='MpServer', x=-47.94, y=76.13, z=193.47], EntityChicken['Chicken'/1674, l='MpServer', x=-32.47, y=93.00, z=244.56], EntityClientPlayerMP['jtrent238'/2129, l='MpServer', x=-36.50, y=91.62, z=215.50], EntitySheep['Sheep'/1626, l='MpServer', x=-79.84, y=88.00, z=225.94], EntityPig['Pig'/1627, l='MpServer', x=-65.69, y=91.00, z=238.50], EntitySheep['Sheep'/1628, l='MpServer', x=-78.47, y=92.00, z=241.63], EntityItem['item.item.seeds'/1756, l='MpServer', x=-1.53, y=82.13, z=185.56], EntityItem['item.tile.dirt.default'/1639, l='MpServer', x=-49.50, y=87.13, z=205.63], EntitySheep['Sheep'/1640, l='MpServer', x=-58.28, y=99.00, z=249.47], EntityItem['item.tile.dirt.default'/1714, l='MpServer', x=-27.44, y=86.13, z=180.13], EntityCreeper['Pat'/1715, l='MpServer', x=-28.34, y=89.00, z=196.31], EntityCreeper['Sally'/1716, l='MpServer', x=-27.31, y=89.00, z=196.31], EntityCreeper['Sssss Boom'/1717, l='MpServer', x=-27.31, y=89.00, z=199.59], EntityCreeper['Bob'/1718, l='MpServer', x=-27.59, y=89.00, z=201.00], EntityItem['item.tile.ice'/1719, l='MpServer', x=-28.28, y=89.13, z=204.53], EntityPig['Pig'/1720, l='MpServer', x=-20.66, y=91.00, z=250.78], EntityItem['item.item.egg'/1721, l='MpServer', x=-24.34, y=91.13, z=242.00]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.func_72914_a(WorldClient.java:373)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2432)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:916)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 7 (x86) version 6.1
+	Java Version: 1.8.0_25, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) Client VM (mixed mode), Oracle Corporation
+	Memory: 167036488 bytes (159 MB) / 370311168 bytes (353 MB) up to 1060372480 bytes (1011 MB)
+	JVM Flags: 6 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx1G -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -Xmn128M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.85.1291 Minecraft Forge 10.13.2.1291 7 mods loaded, 7 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.10.85.1291} [Forge Mod Loader] (forge-1.7.10-10.13.2.1291.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.13.2.1291} [Minecraft Forge] (forge-1.7.10-10.13.2.1291.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	CodeChickenCore{1.0.2.11} [CodeChicken Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	NotEnoughItems{1.0.2.15} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.2.15-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	CreeperCraft{1.0.0b} [CreeperCraft] (CreeperCraft.1.0.0b.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	hackery{modjam} [Hackery for Minecraft] (hackery-1.0-for-1083.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Launched Version: 1.7.10-Forge10.13.2.1291
+	LWJGL: 2.9.1
+	OpenGL: ATI Radeon 3100 Graphics GL version 3.3.10750 Compatibility Profile Context, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)
