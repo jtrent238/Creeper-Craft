@@ -1,0 +1,5 @@
+{
+"NyanCat": {"category": "record","sounds": [{"name": "Nyan_cat","stream": true}]},
+"": {"category": "record","sounds": [{"name": "Nyan_cat","stream": true}]},
+"nyancat": {"category": "record","sounds": [{"name": "Nyan_cat","stream": true}]}
+}
