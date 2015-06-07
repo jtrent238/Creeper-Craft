@@ -1,0 +1,14 @@
+#Lang file was made using MCreator
+#Sun Mar 22 16:18:27 EDT 2015
+item.HastePotion.name=Potion Of Haste
+item.LeapPotion.name=Potion of Leaping
+item.NauseaPotion.name=Potion Of Nausea
+item.ResistancePotion.name=Potion Of Resistance
+item.SaturationPotion.name=Potion Of Saturation
+item.BlindnessPotion.name=Potion Of Blindness
+item.HealthBoostPotion.name=Potion Of Health Boost
+item.HungerPotion.name=Potion Of Hunger
+item.AbsorptionPotion.name=Potion Of Absorption
+item.WitherPotion.name=Potion Of Wither
+item.RainboPotion.name=Rainbow Potion
+item.FatiguePotion.name=Potion Of Mining Fatigue
