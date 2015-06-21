@@ -159,6 +159,15 @@ ins.mcreator_65.registerRenderers();
 ins.mcreator_66.registerRenderers();
 ins.mcreator_67.registerRenderers();
 ins.mcreator_68.registerRenderers();
+ins.mcreator_69.registerRenderers();
+ins.mcreator_70.registerRenderers();
+ins.mcreator_71.registerRenderers();
+ins.mcreator_72.registerRenderers();
+ins.mcreator_73.registerRenderers();
+ins.mcreator_74.registerRenderers();
+ins.mcreator_75.registerRenderers();
+ins.mcreator_76.registerRenderers();
+ins.mcreator_77.registerRenderers();
 
 	}
 }
