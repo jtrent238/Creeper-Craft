@@ -29,7 +29,7 @@ Creeper Craft Is A Mod That Adds In A Lot Of Creepers Into Minecraft. You can tr
 
  
 More Information Here: http://bit.ly/CreeperCraftMod
-Submit An Issue
+
 
 Drops:
 Blue Creeper = Blue Dye(rare)*Will Be Fixed in Future Update
