@@ -161,7 +161,7 @@ public GuiWindow(World world, int i, int j, int k, EntityPlayer entity){
 	this.entity = entity;
 }
 
-private static final ResourceLocation texture = new ResourceLocation("CreeperKingGUI2349766820533799839.png");
+private static final ResourceLocation texture = new ResourceLocation("CreeperKingGUI2119740503639980184.png");
 
 protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3)
 {

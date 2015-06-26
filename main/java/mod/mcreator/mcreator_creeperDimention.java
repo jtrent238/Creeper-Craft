@@ -180,7 +180,7 @@ public static class WorldProviderMod extends WorldProvider{
     }
 
     public IChunkProvider createChunkGenerator(){
-        return new ChunkProviderModded(this.worldObj, this.worldObj.getSeed()-15274);
+        return new ChunkProviderModded(this.worldObj, this.worldObj.getSeed()-21922);
     }
 
     public boolean isSurfaceWorld(){
@@ -204,7 +204,7 @@ public static class WorldProviderMod extends WorldProvider{
         return "creeperDimention";
     }
 
-    
+    @Override protected void generateLightBrightnessTable() {float f = 0.5F;for(int i = 0; i <= 15; ++i) {float f1 = 1.0F - (float) i / 15.0F;this.lightBrightnessTable[i] = (1.0F - f1) / (f1 * 3.0F + 1.0F) * (1.0F - f) + f;}}
 
 }
 
@@ -1073,7 +1073,7 @@ else
 d2 = (double)par4 + 0.5D + 0.25D * (double)i1;
 d5 = (double)(par5Random.nextFloat() * 2.0F * (float)i1);
 }
-par1World.spawnParticle("explode", d0, d1, d2, d3, d4, d5);
+par1World.spawnParticle("portal", d0, d1, d2, d3, d4, d5);
 }
 }
 @SideOnly(Side.CLIENT)

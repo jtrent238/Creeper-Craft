@@ -223,11 +223,10 @@ this.dropItem(Items.gunpowder, 1);
 			
 		}
 
-    	public void onCriticalHit(Entity entity2) {
+    	public void onCriticalHit(Entity entity) {
 			int i = (int)this.posX;
 			int j = (int)this.posY;
 			int k = (int)this.posZ;
-			Entity entity = this;
 			
 if(true){
 if(entity instanceof EntityPlayer)((EntityPlayer)entity).addStat(mcreator_creeperKiller.achievement, 1);
@@ -247,11 +246,10 @@ Entity sentity = EntityList.createEntityByName("blueCreeper", world);if (sentity
 
 		}
 
-		public boolean interact(EntityPlayer entity2){
+		public boolean interact(EntityPlayer entity){
 			int i = (int)this.posX;
 			int j = (int)this.posY;
 			int k = (int)this.posZ;
-			Entity entity = this;
 			
 			return true;
 		}

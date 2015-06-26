@@ -132,7 +132,7 @@ block.setHarvestLevel("pickaxe", 3);
 public void generateSurface(World world, java.util.Random rand, int chunkX, int chunkZ){
 for(int i = 0; i < 10; i++){
 int randPosX = chunkX + rand.nextInt(16);
-int randPosY = rand.nextInt(102)+0;
+int randPosY = rand.nextInt(128)+0;
 int randPosZ = chunkZ + rand.nextInt(16);
 (new WorldGenMinable(mcreator_rainbowOre.block, 20)).generate(world, rand, randPosX, randPosY, randPosZ);
 }

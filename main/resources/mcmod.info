@@ -2,14 +2,14 @@
 {
   "modid": "CreeperCraft",
   "name": "CreeperCraft",
-  "description": "This Mod Adds In A Lot Of Creepers And Other Cool Stuff",
-  "version": "1.0.2b",
-  "credits": "Created by mod maker MCreator and jtrent238",
+  "description": "§44Adds Lots Of Stuff To Minecraft",
+  "version": "1.0.8b",
+  "credits": "Created by mod maker MCreator and §2jtrent238",
   "logoFile": "/logo.png",
   "mcversion": "1.7.10",
   "url": "http://mcreator.pylo.si/",
   "updateUrl": "",
-  "authors": [ "jtrent238" , "MCreator" ],
+  "authors": [ "§2jtrent238" , "MCreator" ],
   "parent": "",
   "screenshots": [],
   "dependencies": [

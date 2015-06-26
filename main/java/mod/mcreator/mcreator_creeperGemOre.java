@@ -132,7 +132,7 @@ block.setHarvestLevel("pickaxe", 2);
 public void generateSurface(World world, java.util.Random rand, int chunkX, int chunkZ){
 for(int i = 0; i < 6; i++){
 int randPosX = chunkX + rand.nextInt(16);
-int randPosY = rand.nextInt(71)+0;
+int randPosY = rand.nextInt(128)+0;
 int randPosZ = chunkZ + rand.nextInt(16);
 (new WorldGenMinable(mcreator_creeperGemOre.block, 12)).generate(world, rand, randPosX, randPosY, randPosZ);
 }
@@ -154,7 +154,7 @@ boolean red = false;
 
 protected BlockCreeperGemOre()
 {
-        super(Material.iron);
+        super(Material.ground);
 
 }
 

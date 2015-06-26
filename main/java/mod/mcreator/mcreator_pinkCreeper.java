@@ -208,11 +208,10 @@ protected void addRandomArmor(){
 			
 		}
 
-    	public void onCriticalHit(Entity entity2) {
+    	public void onCriticalHit(Entity entity) {
 			int i = (int)this.posX;
 			int j = (int)this.posY;
 			int k = (int)this.posZ;
-			Entity entity = this;
 			
 		}
 
@@ -224,11 +223,10 @@ protected void addRandomArmor(){
 			
 		}
 
-		public boolean interact(EntityPlayer entity2){
+		public boolean interact(EntityPlayer entity){
 			int i = (int)this.posX;
 			int j = (int)this.posY;
 			int k = (int)this.posZ;
-			Entity entity = this;
 			
 			return true;
 		}
